@@ -1,6 +1,7 @@
 package com.benjiuruci.JavaDataStructure.Node;
 
 /**
+ * 1
  * @Author: qinxianzhong
  * @Date: 2022/5/13 15:58
  */
