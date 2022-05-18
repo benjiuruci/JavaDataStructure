@@ -63,7 +63,7 @@ public class UserLinkList {
      */
     public void deleteFirst(){
         UserLink current = first;
-        current = first.next;
+        current = current.next;
         first = current;
     }
 
