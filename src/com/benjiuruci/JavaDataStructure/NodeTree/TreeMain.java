@@ -7,11 +7,15 @@ package com.benjiuruci.JavaDataStructure.NodeTree;
 public class TreeMain {
     public static void main(String[] args) {
         Tree tree = new Tree();
-        tree.insert(50,"秦献忠");
-        tree.insert(75,"刘世杰");
-        tree.insert(62,"陈迦勒");
-        tree.insert(87,"张宇");
-        tree.insert(93,"李四");
+        tree.insert(50,"张三");
+        tree.insert(75,"李四");
+        tree.insert(62,"王五");
+        tree.insert(87,"赵六");
+        tree.insert(93,"李四四");
+        tree.insert(86,"李四四");
+        tree.insert(48,"李四四");
+        tree.insert(43,"李四四");
+        tree.insert(92,"李四四");
         /*tree.insert(70,"诸葛");*/
         /*tree.insert(55,"后继");*/
 
@@ -24,7 +28,7 @@ public class TreeMain {
         System.out.println(tree.maxmum());
         System.out.println("遍历--->");
         tree.displayNode(tree.getRoot());
-        tree.deleteKey(75);
+        tree.deleteKey(87);
         System.out.println("遍历--->");
         tree.displayNode(tree.getRoot());
 

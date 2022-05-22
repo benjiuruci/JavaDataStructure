@@ -115,12 +115,12 @@ public class Tree {
         if (current.left == null && current.right == null ){
             if (current == root){
                 root = null;
+            }else if (isLeftChild){
+                parent.left = null;
+            }else{
+                parent.right = null;
             }
-        }else if(isLeftChild){
-            parent.left = null;
-        }else{
-            parent.right = null;
-        }if(current.right == null){
+        }else if(current.right == null){
             if (current == root){
                 root = current.left;
             }else if (isLeftChild){
@@ -145,6 +145,7 @@ public class Tree {
             }else{
                 parent.right = successor;
             }
+            successor.left = current.left;
         }
         return true;
     }
